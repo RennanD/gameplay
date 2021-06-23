@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
@@ -6,7 +6,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background: ${({ theme }) => theme.colors.background};
+  background: ${({ theme }) => theme.colors.secondary100};
 `;
 
 export const HeroImage = styled.Image`
@@ -21,17 +21,29 @@ export const Content = styled.View`
 `;
 
 export const Title = styled.Text`
-  color: ${({ theme }) => theme.colors.heading};
   text-align: center;
   font-size: ${RFValue(40)}px;
 
   margin-bottom: 16px;
+
+  line-height: ${RFValue(40)}px;
+
+  ${({ theme }) => css`
+    color: ${theme.colors.heading};
+    font-family: ${theme.fonts.title700};
+  `}
 `;
 
 export const SubTitle = styled.Text`
-  color: ${({ theme }) => theme.colors.heading};
   font-size: 15px;
   text-align: center;
 
   margin-bottom: 64px;
+
+  line-height: ${RFValue(25)}px;
+
+  ${({ theme }) => css`
+    color: ${theme.colors.heading};
+    font-family: ${theme.fonts.title500};
+  `}
 `;
