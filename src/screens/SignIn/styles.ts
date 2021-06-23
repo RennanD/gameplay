@@ -1,17 +1,15 @@
 import styled, { css } from 'styled-components/native';
 
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background: ${({ theme }) => theme.colors.secondary100};
 `;
 
 export const HeroImage = styled.Image`
   width: 100%;
-  height: ${RFPercentage(48)}px;
 `;
 
 export const Content = styled.View`
