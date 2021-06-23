@@ -19,6 +19,7 @@ import { SignIn } from './src/screens/SignIn';
 
 import { theme } from './src/global/styles/theme';
 import { Background } from './src/components/Background';
+import { Home } from './src/screens/Home';
 
 export default function App(): JSX.Element {
   const [fontsLoaded] = useFonts({
@@ -40,7 +41,7 @@ export default function App(): JSX.Element {
           backgroundColor="transparent"
           barStyle="light-content"
         />
-        <SignIn />
+        <Home />
       </Background>
     </ThemeProvider>
   );
