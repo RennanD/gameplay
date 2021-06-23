@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, HeroImage, Content, Title, SubTitle } from './styles';
 
 import illustrationImage from '../../assets/illustration.png';
+import { ButtonIcon } from '../../components/ButtonIcon';
 
 export function SignIn(): JSX.Element {
   return (
@@ -15,8 +16,10 @@ export function SignIn(): JSX.Element {
         </Title>
 
         <SubTitle>
-          Crie grupos para jogar seus games favoritos com seus amigos
+          Crie grupos para jogar seus games {'\n'}favoritos com seus amigos
         </SubTitle>
+
+        <ButtonIcon>Entrar com Discord</ButtonIcon>
       </Content>
     </Container>
   );

@@ -11,11 +11,12 @@ export const Container = styled.View`
 
 export const HeroImage = styled.Image`
   width: 100%;
-  height: ${RFPercentage(36)}px;
+  height: ${RFPercentage(48)}px;
 `;
 
 export const Content = styled.View`
   margin-top: -40px;
+  padding: 0 30px;
   padding-bottom: 20px;
 `;
 
@@ -32,5 +33,5 @@ export const SubTitle = styled.Text`
   font-size: 15px;
   text-align: center;
 
-  margin-bottom: 64;
+  margin-bottom: 64px;
 `;
